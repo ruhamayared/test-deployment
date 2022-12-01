@@ -3,7 +3,7 @@ const app = express();
 const PORT = process.env.PORT || 3002
 
 app.get('/', (req, res) => {
-    res.send('Hello World!')
+    res.send(`Hello World! ${PORT}`)
 })
 
 app.get('/dburl', (req, res) => {
@@ -11,5 +11,5 @@ app.get('/dburl', (req, res) => {
 })
 
 app.listen(PORT, () => {
-    console.log(`✅ PORT: ${PORT} 🌟`); //completely optional
+    console.log(`✅ PORT: ${PORT} 🌟`)
 })
